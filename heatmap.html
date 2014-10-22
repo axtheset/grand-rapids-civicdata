@@ -12,16 +12,11 @@
 
     <!-- The Styles -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap themes. Uncomment your favorite. -->
     <link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/spacelab/bootstrap.min.css" rel="stylesheet">
-
     <style type="text/css">
       body {
         margin-top: 40px;
-      }
-      .jumbotron {
-        margin-top: 20px;
+        margin-bottom: 40px;
       }
     </style>
 
@@ -39,36 +34,32 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">City of Grand Rapids, MI -  CivicData.com Examples</a>
+          <a class="navbar-brand" href="#">City of Grand Rapids, MI - CivicData.com Examples</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="heatmap.html">Heatmap</a></li>
+            <li class="active"><a href="#">Heatmap</a></li>
             <li><a href="torque.html">Time Interval</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    
-    <div class="container theme-showcase" role="main">
-      <div class="jumbotron">
-        <h2>City of Grand Rapids, MI - CivicData.com Visualization Examples</h2>
-        <p>A collection of visualizations using CivicData.com open data platform and the Accela Civic Platform as the data source.</p>
-        <ul class="list-group"> 
-          <li class="list-group-item"><a href="dashboard.html">Dashboard</a> - Lorum Ipsum</li>
-          <li class="list-group-item"><a href="heatmap.html">Heatmap</a> - Lorum Ipsum</li>
-          <li class="list-group-item"><a href="torque.html">Time Interval</a> - Lorum Ipsum</li>
-        </ul>
-      </div>    
 
-    </div> <!-- /container -->
+
+    <div id="map" style="height:100vh;">
+      <iframe width='100%' style="height:100vh;" frameborder='0' src='http://sethaxthelm.cartodb.com/viz/ef7e807e-598f-11e4-b85c-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </div>
+    
+
+
 
 
     <!-- Le JavaScripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    
   </body>
 </html>
