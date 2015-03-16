@@ -366,7 +366,7 @@
 
             
             WordCloud(document.getElementById('cloud'), {
-              list : tags.map(function(word) { return [word[0], Math.round(word[1]/5)]; })
+              list : tags.map(function(word) { return [word[0], Math.round(word[1]/20)]; })
             });
 
             //console.log(tagMap);
@@ -377,7 +377,7 @@
                 var tagElem;
                 if (tags.some(function(el) { if (el[0] === tag) {tagElem = el; return true;} return false; })) {
                 document.getElementById("details").innerText = "There were " + tagElem[1] + 
-                    " mentions in permit descriptions of “" + tag + "” in the last year";
+                    " mentions of “" + tag + "” in the last year";
                 }
               } else {
                 document.getElementById("details").innerText = "";

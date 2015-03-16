@@ -13,3 +13,4 @@ City of Grand Rapids, MI Building Permits on [CivicData.com](http://www.civicdat
 * [D3.js](http://d3js.org/): JavaScript library for manipulating documents based on data.
 * [C3.js](http://c3js.org/): Chart library for D3.
 * [CartoDB](http://cartodb.com/): Easily create amazing maps.
+* [WordCloud2](http://timdream.org/wordcloud2.js/): Generate a word cloud on 2D canvas or html.
