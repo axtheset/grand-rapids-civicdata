@@ -21,6 +21,8 @@
       body {
         margin-top: 40px;
       }
+      #cloud { border-radius:3px;border:1px solid #d0d0d0; }
+      #cloud span { cursor: pointer; }
     </style>
 
   </head>
@@ -188,7 +190,16 @@
         </div>
       </div>
       </div>
-
+    
+  <div class="chartContainer" id="wordCloud">    
+    <div class="page-header">
+      <h1>Permit Description Word Cloud</h1>
+    </div>    
+    <div id='cloud' style="width:800px;height:450px;position:relative;"></div>
+    <div id="details" style="width:800px;text-align:center;line-height:2em;margin-top:0.5em"></div>
+  </div>
+  <br/>
+  <br/>
     </div> <!-- /container -->
 
 
@@ -198,6 +209,7 @@
     <script src="js/spin.min.js" charset="utf-8"></script>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="assets/c3.min.js"></script>
+    <script src="js/wordcloud.js"></script>
     <script src="js/chart.js" charset="utf-8"></script>
   </body>
 </html>
