@@ -318,7 +318,9 @@
               
           });
 
-        var permitDescQuery = "SELECT \"Description\" from \"resource_id\" WHERE \"Applied Online\" != \'\' and \"Issued\" >= \'2014-01-01\'";
+        var dateCalc = moment().subtract(12, 'months').format("YYYY-MM-DD");
+
+        var permitDescQuery = "SELECT \"Description\" from \"resource_id\" WHERE \"Applied Online\" != \'\' and \"Issued\" >= \'" + dateCalc + "\'";
 
         var permitDesc = baseURI + encodeURIComponent(permitDescQuery.replace("resource_id",resourceId));
 
